@@ -7,9 +7,10 @@ const Index = () => {
     <div className="min-h-screen bg-oceanBlue text-textWhite font-playfair">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold mb-16 leading-tight max-w-4xl mx-auto">
-          Campanha bem-sucedida é como um filme premiado, roteiro afiado, trilha impactante e uma bilheteira cheia de resultados.🎬💰
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight max-w-4xl mx-auto">
+          "Campanha bem-sucedida é como um filme premiado, roteiro afiado, trilha impactante e uma bilheteira cheia de resultados.🎬💰"
         </h1>
+        <p className="text-lg text-gray-400 font-light">Gustavo Correia</p>
       </section>
 
       {/* Produções Section */}
@@ -61,11 +62,8 @@ const Index = () => {
             />
           </div>
           <div className="flex-1">
-            <h2 className="text-4xl font-bold mb-8">Trabalhe comigo</h2>
+            <h2 className="text-4xl font-bold mb-8">Gustavo Correia - Diretor de Marketing</h2>
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-              <p className="text-2xl font-semibold mb-6">
-                Vamos bater a bilheteira nas vendas na sua marca!
-              </p>
               <p>
                 Com uma trajetória construída ao lado de grandes nomes como Ícaro de Carvalho e Leandro Ladeira e outros grandes nomes, Gustavo carrega a experiência de quem conhece o marketing digital de verdade por dentro, nos bastidores, onde as grandes decisões são tomadas.
               </p>
@@ -79,8 +77,14 @@ const Index = () => {
                 Não importa o tamanho da ideia com a direção certa, ela vira um movimento.
                 E é isso que ele faz: transforma estratégia em impacto real.
               </p>
-              <div className="flex items-center gap-6 mt-8">
-                <div className="flex gap-6">
+              <div className="flex flex-col gap-6 mt-8">
+                <h3 className="text-3xl font-bold">Trabalhe Comigo</h3>
+                <Button
+                  className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 w-fit"
+                >
+                  Fazer orçamento
+                </Button>
+                <div className="flex gap-6 mt-8">
                   <a
                     href="https://youtube.com/@opersuasivo?si=TruuZIguSIYV8j0i"
                     target="_blank"
@@ -98,11 +102,6 @@ const Index = () => {
                     <Instagram size={32} />
                   </a>
                 </div>
-                <Button
-                  className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105"
-                >
-                  Fazer orçamento
-                </Button>
               </div>
             </div>
           </div>
