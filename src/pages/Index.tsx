@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Youtube, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,7 +9,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center animate-fade-in">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight max-w-4xl mx-auto">
-          "Campanha bem-sucedida é como um filme premiado, roteiro afiado, trilha impactante e uma bilheteira cheia de resultados.🎬💰"
+          "Campanha bem-sucedida é como um filme premiado, roteiro afiado, trilha impactante e uma bilheteira cheia de resultados."
         </h1>
         <p className="text-lg text-gray-400 font-light">Gustavo Correia</p>
       </section>
@@ -79,6 +80,7 @@ const Index = () => {
               </p>
               <div className="flex flex-col gap-6 mt-8">
                 <h3 className="text-3xl font-bold">Trabalhe Comigo</h3>
+                <p className="text-xl text-gray-300 mb-4">Vamos bater a bilheteira nas vendas!</p>
                 <Button
                   className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 w-fit"
                 >
