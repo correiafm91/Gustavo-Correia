@@ -3,6 +3,27 @@ import { Youtube, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
+  const handleButtonClick = () => {
+    const container = document.createElement('div');
+    container.innerHTML = `
+      <div 
+        data-respondi-container="" 
+        data-respondi-mode="regular" 
+        data-respondi-src="https://form.respondi.app/P314ziSx" 
+        data-respondi-width="100%" 
+        data-respondi-height="600px">
+      </div>
+    `;
+    
+    document.body.appendChild(container);
+    
+    const script = document.createElement('script');
+    script.setAttribute("async", "");
+    script.id = 'respondi_src';
+    script.src = 'https://embed.respondi.app/embed.js';
+    document.body.appendChild(script);
+  };
+
   return (
     <div className="min-h-screen bg-oceanBlue text-textWhite font-playfair">
       {/* Hero Section */}
@@ -16,7 +37,7 @@ const Index = () => {
       {/* Produções Section */}
       <section className="container mx-auto px-4 py-16 animate-fade-in">
         <h2 className="text-5xl font-bold mb-16 text-left tracking-wide">Produções</h2>
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="grid md:grid-cols-3 gap-16">
           {/* Ícaro de Carvalho */}
           <div className="flex flex-col items-center animate-scale-in">
             <div className="w-64 h-64 rounded-full overflow-hidden mb-8 hover:scale-105 transition-transform duration-300 shadow-lg">
@@ -48,6 +69,21 @@ const Index = () => {
               Ladeira é referência em vendas, com domínio absoluto de funis e produtos perpétuos.
             </p>
           </div>
+
+          {/* Eduardo Feldberg */}
+          <div className="flex flex-col items-center animate-scale-in" style={{ animationDelay: '0.4s' }}>
+            <div className="w-64 h-64 rounded-full overflow-hidden mb-8 hover:scale-105 transition-transform duration-300 shadow-lg">
+              <img
+                src="https://i.postimg.cc/MTds1JdN/356951447-215371860970127-5882135571449129395-n.jpg"
+                alt="Eduardo Feldberg"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-3xl font-bold mb-4">Eduardo Feldberg</h3>
+            <p className="text-center text-gray-300 max-w-md leading-relaxed">
+              Do zero ao milhão com voz e propósito. Eduardo Feldberg, o Primo Pobre, transformou boletos em bilhetes de mudança. Criador do Pobre Show, fundador da Vencer Incorporadora e embaixador do Novo Sertão, ele ensina finanças com humor e constrói impacto onde antes só havia escassez.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -77,9 +113,10 @@ const Index = () => {
                 <h3 className="text-3xl font-bold">Trabalhe Comigo</h3>
                 <p className="text-xl text-gray-300 mb-4">Vamos bater a Bilheterias nas vendas!</p>
                 <Button
+                  onClick={handleButtonClick}
                   className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 w-fit"
                 >
-                  Fazer orçamento
+                  Produzir meu anúncio
                 </Button>
                 <div className="flex gap-6 mt-8">
                   <a
