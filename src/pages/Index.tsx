@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Youtube, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,7 +8,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center animate-fade-in">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight max-w-4xl mx-auto">
-          "Campanha bem-sucedida é como um filme premiado, roteiro afiado, trilha impactante e uma bilheteira cheia de resultados."
+          "Anúncio bem-sucedido é como um filme premiado, roteiro afiado, trilha impactante e uma bilheteria cheia de resultados."
         </h1>
         <p className="text-lg text-gray-400 font-light">Gustavo Correia</p>
       </section>
@@ -63,7 +62,7 @@ const Index = () => {
             />
           </div>
           <div className="flex-1">
-            <h2 className="text-4xl font-bold mb-8">Gustavo Correia - Diretor de Marketing</h2>
+            <h2 className="text-4xl font-bold mb-8">Gustavo Correia - Copywriter</h2>
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
                 Com uma trajetória construída ao lado de grandes nomes como Ícaro de Carvalho e Leandro Ladeira e outros grandes nomes, Gustavo carrega a experiência de quem conhece o marketing digital de verdade por dentro, nos bastidores, onde as grandes decisões são tomadas.
@@ -72,15 +71,11 @@ const Index = () => {
                 Hoje, lidera campanhas de Anúncios de VSL para marcas e profissionais que exigem resultado e estratégia de alto nível para se tornar uma autoridade no seu seguimento.
               </p>
               <p>
-                À frente de uma equipe multidisciplinar, Gustavo comanda copywriters criativos e especialistas em audiovisual, garantindo que cada projeto entregue clareza, conversão e autoridade.
-              </p>
-              <p>
-                Não importa o tamanho da ideia com a direção certa, ela vira um movimento.
-                E é isso que ele faz: transforma estratégia em impacto real.
+                Não importa o tamanho da ideia com a direção certa, ela vira um movimento. E é isso que ele faz: transforma estratégia em impacto real.
               </p>
               <div className="flex flex-col gap-6 mt-8">
                 <h3 className="text-3xl font-bold">Trabalhe Comigo</h3>
-                <p className="text-xl text-gray-300 mb-4">Vamos bater a bilheteira nas vendas!</p>
+                <p className="text-xl text-gray-300 mb-4">Vamos bater a Bilheterias nas vendas!</p>
                 <Button
                   className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 w-fit"
                 >
