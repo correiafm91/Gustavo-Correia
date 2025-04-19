@@ -1,22 +1,13 @@
 import React from 'react';
 import { Youtube, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 
 const Index = () => {
+  const [isDialogOpen, setIsDialogOpen] = React.useState(false);
+
   const handleButtonClick = () => {
-    const container = document.createElement('div');
-    container.innerHTML = `
-      <div 
-        data-respondi-container="" 
-        data-respondi-mode="regular" 
-        data-respondi-src="https://form.respondi.app/P314ziSx" 
-        data-respondi-width="100%" 
-        data-respondi-height="600px">
-      </div>
-    `;
-    
-    document.body.appendChild(container);
-    
+    setIsDialogOpen(true);
     const script = document.createElement('script');
     script.setAttribute("async", "");
     script.id = 'respondi_src';
@@ -141,6 +132,18 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="w-full max-w-3xl p-0 bg-transparent border-none">
+          <div 
+            data-respondi-container="" 
+            data-respondi-mode="regular" 
+            data-respondi-src="https://form.respondi.app/P314ziSx" 
+            data-respondi-width="100%" 
+            data-respondi-height="600px">
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
