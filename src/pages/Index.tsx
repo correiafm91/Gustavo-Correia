@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Youtube, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -89,16 +90,24 @@ const Index = () => {
             />
           </div>
           <div className="flex-1">
-            <h2 className="text-4xl font-bold mb-8">Gustavo Correia - Copywriter</h2>
+            <h2 className="text-4xl font-bold mb-8">Gustavo Correia – Diretor de Anúncios VSL</h2>
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
-                Com uma trajetória construída ao lado de grandes nomes como Ícaro de Carvalho e Leandro Ladeira e outros grandes nomes, Gustavo carrega a experiência de quem conhece o marketing digital de verdade por dentro, nos bastidores, onde as grandes decisões são tomadas.
+                Enquanto muitos criam anúncios, ele dirige campanhas.
+                Cada VSL que passa por suas mãos é tratada como uma produção de alto impacto com roteiro, ritmo e estrutura pensados para uma coisa só: converter.
               </p>
               <p>
-                Hoje, lidera campanhas de Anúncios de VSL para marcas e profissionais que exigem resultado e estratégia de alto nível para se tornar uma autoridade no seu seguimento.
+                Com uma trajetória construída ao lado de gigantes como Ícaro de Carvalho, Leandro Ladeira e outros nomes que moldaram o marketing digital no Brasil, Gustavo conhece os bastidores onde as decisões milionárias são tomadas. E mais do que isso: ele sabe como construí-las.
               </p>
               <p>
-                Não importa o tamanho da ideia com a direção certa, ela vira um movimento. E é isso que ele faz: transforma estratégia em impacto real.
+                Hoje, lidera campanhas de VSL para marcas e experts que exigem performance. À frente de uma equipe de copywriters e profissionais de audiovisual, ele comanda cada etapa da campanha com precisão do argumento à edição final.
+              </p>
+              <p>
+                Não é sobre anunciar por anunciar é sobre dominar a narrativa, acelerar decisões e transformar atenção em faturamento.
+              </p>
+              <p>
+                Se o seu produto tem potencial, ele sabe como contar essa história do jeito certo.
+                Porque com a direção certa, uma VSL não é só um vídeo. É uma máquina de conversão.
               </p>
               <div className="flex flex-col gap-6 mt-8">
                 <h3 className="text-3xl font-bold">Trabalhe Comigo</h3>
@@ -119,7 +128,7 @@ const Index = () => {
                     <Youtube size={32} />
                   </a>
                   <a
-                    href="https://www.instagram.com/opersuasivo_"
+                    href="https://www.instagram.com/upersuasivo/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-pink-500 transition-colors duration-300"
