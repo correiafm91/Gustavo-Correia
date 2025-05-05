@@ -21,7 +21,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center animate-fade-in">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight max-w-4xl mx-auto">
-          "Anúncio bem-sucedido é como um filme premiado, roteiro afiado, trilha impactante e uma bilheteria cheia de resultados."
+          "Livro bem-sucedido é como um filme premiado, escrita afiada, narrativa impactante e uma bestseller cheia de resultados."
         </h1>
         <p className="text-lg text-gray-400 font-light">Gustavo Correia</p>
       </section>
@@ -90,28 +90,26 @@ const Index = () => {
             />
           </div>
           <div className="flex-1">
-            <h2 className="text-4xl font-bold mb-8">Gustavo Correia – Diretor de Anúncios VSL</h2>
+            <h2 className="text-4xl font-bold mb-8">Gustavo Correia - Ghostwriter</h2>
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
-                Enquanto muitos criam anúncios, ele dirige campanhas.
-                Cada VSL que passa por suas mãos é tratada como uma produção de alto impacto com roteiro, ritmo e estrutura pensados para uma coisa só: converter.
+                Enquanto muitos escrevem livros, ele constrói narrativas. Cada projeto que passa por suas mãos é tratado como uma obra de impacto, com estrutura, ritmo e mensagem pensados para um só objetivo: transformar leitura em resultado.
               </p>
               <p>
-                Com uma trajetória construída ao lado de gigantes como Ícaro de Carvalho, Leandro Ladeira e outros nomes que moldaram o marketing digital no Brasil, Gustavo conhece os bastidores onde as decisões milionárias são tomadas. E mais do que isso: ele sabe como construí-las.
+                Com uma trajetória ao lado de nomes como Ícaro de Carvalho, Leandro Ladeira e outros que moldaram o marketing digital no Brasil, Gustavo conhece os bastidores onde as grandes ideias viram movimentos. Mais do que escrever livros, ele sabe como posicionar histórias que geram autoridade, influência e vendas.
               </p>
               <p>
-                Hoje, lidera campanhas de VSL para marcas e experts que exigem performance. À frente de uma equipe de copywriters e profissionais de audiovisual, ele comanda cada etapa da campanha com precisão do argumento à edição final.
+                Hoje, assina obras para marcas e experts que exigem estratégia, identidade e performance. Com mais de 24 obras criadas, ele comanda cada etapa  da ideia ao lançamento  com precisão cirúrgica, palavra por palavra.
               </p>
               <p>
-                Não é sobre anunciar por anunciar é sobre dominar a narrativa, acelerar decisões e transformar atenção em faturamento.
+                Não se trata apenas de escrever. É sobre dar voz à sua visão, embalar seu conhecimento em narrativa de alto nível e transformar sua história em um ativo de influência.
               </p>
               <p>
-                Se o seu produto tem potencial, ele sabe como contar essa história do jeito certo.
-                Porque com a direção certa, uma VSL não é só um vídeo. É uma máquina de conversão.
+                Se você tem uma história dentro de você, ele sabe como escrevê-lo do jeito certo. Porque com a direção certa, um livro não é só leitura é legado, autoridade e receita.
               </p>
               <div className="flex flex-col gap-6 mt-8">
                 <h3 className="text-3xl font-bold">Trabalhe Comigo</h3>
-                <p className="text-xl text-gray-300 mb-4">Vamos bater a Bilheterias nas vendas!</p>
+                <p className="text-xl text-gray-300 mb-4">Vamos Bestseller nas vendas!</p>
                 <Button
                   onClick={handleButtonClick}
                   className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 w-fit"
