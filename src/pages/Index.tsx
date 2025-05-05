@@ -104,7 +104,7 @@ const Index = () => {
               </p>
               <div className="flex flex-col gap-6 mt-8">
                 <h3 className="text-3xl font-bold">Trabalhe Comigo</h3>
-                <p className="text-xl text-gray-300 mb-4">Vamos Bestseller nas vendas!</p>
+                <p className="text-xl text-gray-300 mb-4">Vamos bater Bestseller nas vendas!</p>
                 <Button
                   onClick={handleButtonClick}
                   className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 w-fit"
