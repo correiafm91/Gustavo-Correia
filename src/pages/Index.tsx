@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Youtube, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -112,7 +113,7 @@ const Index = () => {
                 </Button>
                 <div className="flex gap-6 mt-8">
                   <a
-                    href="https://youtube.com/@opersuasivo?si=TruuZIguSIYV8j0i"
+                    href="https://youtube.com/@umbomescritor?si=8R9BGyR0OkysqZxC"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-red-500 transition-colors duration-300"
@@ -120,7 +121,7 @@ const Index = () => {
                     <Youtube size={32} />
                   </a>
                   <a
-                    href="https://www.instagram.com/upersuasivo/"
+                    href="https://www.instagram.com/umbomescritor/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-pink-500 transition-colors duration-300"
