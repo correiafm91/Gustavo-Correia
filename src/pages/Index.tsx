@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Youtube, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,12 +7,7 @@ const Index = () => {
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
 
   const handleButtonClick = () => {
-    setIsDialogOpen(true);
-    const script = document.createElement('script');
-    script.setAttribute("async", "");
-    script.id = 'respondi_src';
-    script.src = 'https://embed.respondi.app/embed.js';
-    document.body.appendChild(script);
+    window.open("https://www.instagram.com/direct/t/17846052717436451", "_blank");
   };
 
   return (
@@ -114,7 +108,7 @@ const Index = () => {
                   onClick={handleButtonClick}
                   className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 w-fit"
                 >
-                  Produzir meu anúncio
+                  Produzir meu Livro
                 </Button>
                 <div className="flex gap-6 mt-8">
                   <a
