@@ -117,47 +117,34 @@ const Index = () => {
               </section>
             )}
 
-            {/* Navigation Buttons */}
-            <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-6">
+            {/* Navigation Buttons - Replaced arrows with orange buttons */}
+            <div className="absolute bottom-16 left-6 md:left-8">
               {currentPage > 1 && (
                 <Button
                   onClick={prevPage}
-                  variant="outline"
-                  size="icon"
-                  className="h-12 w-12 rounded-full bg-[#1A2C47] border-[#2A3F59] hover:bg-[#2A3F59] text-white shadow-lg"
+                  className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-6 py-2 rounded-lg transition-all duration-300 shadow-lg flex items-center gap-2"
                 >
-                  <ChevronLeft className="h-6 w-6" />
-                  <span className="sr-only">Página anterior</span>
+                  <ChevronLeft className="h-5 w-5" /> Voltar
                 </Button>
               )}
             </div>
             
-            <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-6">
+            <div className="absolute bottom-16 right-6 md:right-8">
               {currentPage < totalPages && (
                 <Button
-                  onClick={nextPage}
-                  variant="outline" 
-                  size="icon"
-                  className="h-12 w-12 rounded-full bg-[#1A2C47] border-[#2A3F59] hover:bg-[#2A3F59] text-white shadow-lg"
+                  onClick={nextPage} 
+                  className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-6 py-2 rounded-lg transition-all duration-300 shadow-lg flex items-center gap-2"
                 >
-                  <ChevronRight className="h-6 w-6" />
-                  <span className="sr-only">Próxima página</span>
+                  Avançar <ChevronRight className="h-5 w-5" />
                 </Button>
               )}
             </div>
           </div>
         </div>
         
-        {/* Page Turn Button */}
+        {/* Remove the separate "Virar Página" button since we now have better navigation buttons */}
         <div className="flex justify-center pb-6">
-          {currentPage < totalPages ? (
-            <Button 
-              onClick={nextPage}
-              className="flex items-center gap-2 bg-[#F97316] hover:bg-[#F97316]/90 text-white px-6 py-2 rounded-lg"
-            >
-              Virar Página <ChevronRight className="h-5 w-5" />
-            </Button>
-          ) : (
+          {currentPage === totalPages && (
             <Button
               onClick={handleButtonClick}
               className="flex items-center gap-2 bg-[#F97316] hover:bg-[#F97316]/90 text-white px-6 py-2 rounded-lg"
