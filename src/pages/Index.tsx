@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Youtube, Instagram } from 'lucide-react';
+import { Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 
@@ -67,12 +67,12 @@ const Index = () => {
                 </Button>
                 <div className="flex gap-6 mt-8">
                   <a
-                    href="https://youtube.com/@umbomescritor?si=8R9BGyR0OkysqZxC"
+                    href="https://x.com/umbomescritor"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-red-500 transition-colors duration-300"
+                    className="text-white hover:text-blue-400 transition-colors duration-300"
                   >
-                    <Youtube size={32} />
+                    <Twitter size={32} />
                   </a>
                   <a
                     href="https://www.instagram.com/umbomescritor/"
