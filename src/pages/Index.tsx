@@ -21,57 +21,11 @@ const Index = () => {
         <p className="text-lg text-gray-400 font-light">Gustavo Correia</p>
       </section>
 
-      {/* Produções Section */}
-      <section className="container mx-auto px-4 py-16 animate-fade-in">
-        <h2 className="text-5xl font-bold mb-16 text-left tracking-wide">Produções</h2>
-        <div className="grid md:grid-cols-3 gap-16">
-          {/* Ícaro de Carvalho */}
-          <div className="flex flex-col items-center animate-scale-in">
-            <div className="w-64 h-64 rounded-full overflow-hidden mb-8 hover:scale-105 transition-transform duration-300 shadow-lg">
-              <img
-                src="https://i.postimg.cc/nc09YxV0/high-1744993455.jpg"
-                alt="Ícaro de Carvalho"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-3xl font-bold mb-4">Ícaro de Carvalho</h3>
-            <p className="text-center text-gray-300 max-w-md leading-relaxed">
-              Mestre em copywriting e construção de autoridade.
-              Juntos, formam a base estratégica por trás de grandes movimentos do mercado.
-            </p>
-          </div>
-
-          {/* Leandro Ladeira */}
-          <div className="flex flex-col items-center animate-scale-in" style={{ animationDelay: '0.2s' }}>
-            <div className="w-64 h-64 rounded-full overflow-hidden mb-8 hover:scale-105 transition-transform duration-300 shadow-lg">
-              <img
-                src="https://i.postimg.cc/HW5kkg7V/Hotmart-a-maior-plataforma-de-curso-online-do-mundo.jpg"
-                alt="Leandro Ladeira"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-3xl font-bold mb-4">Leandro Ladeira</h3>
-            <p className="text-center text-gray-300 max-w-md leading-relaxed">
-              Um dos nomes mais influentes do marketing digital no Brasil.
-              Ladeira é referência em vendas, com domínio absoluto de funis e produtos perpétuos.
-            </p>
-          </div>
-
-          {/* Eduardo Feldberg */}
-          <div className="flex flex-col items-center animate-scale-in" style={{ animationDelay: '0.4s' }}>
-            <div className="w-64 h-64 rounded-full overflow-hidden mb-8 hover:scale-105 transition-transform duration-300 shadow-lg">
-              <img
-                src="https://i.postimg.cc/MTds1JdN/356951447-215371860970127-5882135571449129395-n.jpg"
-                alt="Eduardo Feldberg"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-3xl font-bold mb-4">Eduardo Feldberg</h3>
-            <p className="text-center text-gray-300 max-w-md leading-relaxed">
-              Do zero ao milhão com voz e propósito. Eduardo Feldberg, o Primo Pobre, transformou boletos em bilhetes de mudança. Criador do Pobre Show, fundador da Vencer Incorporadora e embaixador do Novo Sertão, ele ensina finanças com humor e constrói impacto onde antes só havia escassez.
-            </p>
-          </div>
-        </div>
+      {/* Feature Headline Section */}
+      <section className="container mx-auto px-4 py-24 text-center animate-fade-in">
+        <h2 className="text-5xl md:text-6xl font-bold tracking-wide">
+          Especialista em transformar experiência de vida em um livro
+        </h2>
       </section>
 
       {/* Personal Presentation Section */}
@@ -91,7 +45,7 @@ const Index = () => {
                 Enquanto muitos escrevem livros, ele constrói narrativas. Cada projeto que passa por suas mãos é tratado como uma obra de impacto, com estrutura, ritmo e mensagem pensados para um só objetivo: transformar leitura em resultado.
               </p>
               <p>
-                Com uma trajetória ao lado de nomes como Ícaro de Carvalho, Leandro Ladeira e outros que moldaram o marketing digital no Brasil, Gustavo conhece os bastidores onde as grandes ideias viram movimentos. Mais do que escrever livros, ele sabe como posicionar histórias que geram autoridade, influência e vendas.
+                Com uma trajetória ao lado de grandes nomes que moldaram o marketing digital no Brasil, Gustavo conhece os bastidores onde as grandes ideias viram movimentos. Mais do que escrever livros, ele sabe como posicionar histórias que geram autoridade, influência e vendas.
               </p>
               <p>
                 Hoje, assina obras para marcas e experts que exigem estratégia, identidade e performance. Com mais de 24 obras criadas, ele comanda cada etapa  da ideia ao lançamento  com precisão cirúrgica, palavra por palavra.
