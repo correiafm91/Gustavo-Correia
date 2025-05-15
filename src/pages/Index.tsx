@@ -33,7 +33,7 @@ const Index = () => {
                     <div className="w-16 h-1 bg-[#F97316] mx-auto my-8"></div>
                     <p className="text-xl text-gray-400">Gustavo Correia</p>
                   </div>
-                  <p className="text-center text-gray-400 animate-pulse">
+                  <p className="text-center text-gray-400">
                     Arraste para passar
                   </p>
                 </div>
@@ -49,6 +49,23 @@ const Index = () => {
                     <p className="text-2xl text-center font-semibold text-[#F97316] my-8 italic">
                       Especialista em transformar experiência de vida em um livro
                     </p>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                      <div className="bg-[#0f2a4a] p-6 rounded-lg border border-[#1a3152] text-center">
+                        <div className="text-3xl font-bold text-[#F97316] mb-2">+24</div>
+                        <p className="text-gray-300">Obras criadas</p>
+                      </div>
+                      
+                      <div className="bg-[#0f2a4a] p-6 rounded-lg border border-[#1a3152] text-center">
+                        <div className="text-3xl font-bold text-[#F97316] mb-2">+400k</div>
+                        <p className="text-gray-300">Lucros gerados</p>
+                      </div>
+                      
+                      <div className="bg-[#0f2a4a] p-6 rounded-lg border border-[#1a3152] text-center">
+                        <div className="text-3xl font-bold text-[#F97316] mb-2">89,4%</div>
+                        <p className="text-gray-300">Aprovação dos leitores</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="absolute inset-0 pointer-events-none">
