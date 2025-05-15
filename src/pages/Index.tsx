@@ -2,7 +2,6 @@
 import React from 'react';
 import { Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { 
   Carousel, 
   CarouselContent, 
@@ -10,7 +9,6 @@ import {
 } from "@/components/ui/carousel";
 
 const Index = () => {
-  const [isDialogOpen, setIsDialogOpen] = React.useState(false);
   const [activePage, setActivePage] = React.useState(0);
   const carouselRef = React.useRef(null);
   const [api, setApi] = React.useState(null);
@@ -37,10 +35,6 @@ const Index = () => {
 
   const goToPage = (pageIndex) => {
     api?.scrollTo(pageIndex);
-  };
-
-  const handleButtonClick = () => {
-    setIsDialogOpen(true);
   };
 
   return (
@@ -119,7 +113,7 @@ const Index = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0c2341]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl font-bold mb-6 text-[#F97316]">Gustavo Correia - Ghostwriter</h2>
+                      <h2 className="text-3xl font-bold mb-6 text-[#F97316]">Gustavo Correia - Ghostwriter e Escritor</h2>
                       <div className="space-y-5 text-gray-300 text-lg leading-relaxed">
                         <p>
                           Enquanto muitos escrevem livros, ele constrói narrativas. Cada projeto que passa por suas mãos é tratado como uma obra de impacto, com estrutura, ritmo e mensagem pensados para um só objetivo: transformar leitura em resultado.
@@ -153,12 +147,14 @@ const Index = () => {
                     <div className="max-w-xl mx-auto text-center space-y-6">
                       <h3 className="text-3xl font-bold">Trabalhe Comigo</h3>
                       <p className="text-xl text-gray-300 mb-4">Vamos bater Bestseller nas vendas!</p>
-                      <Button
-                        onClick={handleButtonClick}
-                        className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 w-fit"
+                      <a
+                        href="https://form.respondi.app/P314ziSx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105"
                       >
                         Produzir meu Livro
-                      </Button>
+                      </a>
                       <div className="flex justify-center gap-6 mt-8">
                         <a
                           href="https://x.com/obestseller_"
@@ -204,18 +200,6 @@ const Index = () => {
           </Carousel>
         </div>
       </div>
-
-      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="w-full max-w-3xl p-0 bg-transparent border-none">
-          <div 
-            data-respondi-container="" 
-            data-respondi-mode="regular" 
-            data-respondi-src="https://form.respondi.app/P314ziSx" 
-            data-respondi-width="100%" 
-            data-respondi-height="600px">
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };
