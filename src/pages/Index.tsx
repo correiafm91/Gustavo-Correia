@@ -1,14 +1,12 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { 
   Carousel, 
   CarouselContent, 
-  CarouselItem, 
-  CarouselPrevious, 
-  CarouselNext 
+  CarouselItem
 } from "@/components/ui/carousel";
 
 const Index = () => {
@@ -29,14 +27,11 @@ const Index = () => {
               <CarouselItem className="relative">
                 <div className="h-[80vh] p-8 flex flex-col justify-between">
                   <div className="text-center pt-16 animate-fade-in">
-                    <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                      Ghostwriter
-                    </h1>
-                    <h2 className="text-3xl md:text-4xl mb-4 text-gray-300">
-                      Transformando histórias em bestsellers
-                    </h2>
+                    <p className="text-2xl md:text-3xl text-[#F97316] italic mb-8">
+                      "Livro bem-sucedido é como um filme premiado, escrita afiada, narrativa impactante e uma bestseller cheia de resultados."
+                    </p>
                     <div className="w-16 h-1 bg-[#F97316] mx-auto my-8"></div>
-                    <p className="text-xl text-gray-400 italic">por Gustavo Correia</p>
+                    <p className="text-xl text-gray-400">Gustavo Correia</p>
                   </div>
                   <p className="text-center text-gray-400 animate-pulse">
                     Arraste para passar
@@ -50,16 +45,9 @@ const Index = () => {
               {/* Page 2 - Introduction */}
               <CarouselItem>
                 <div className="h-[80vh] p-8 overflow-y-auto">
-                  <h2 className="text-4xl font-bold mb-8 border-b border-[#F97316] pb-2">Capítulo 1</h2>
                   <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-                    <p>
-                      Enquanto muitos escrevem livros, ele constrói narrativas. Cada projeto que passa por suas mãos é tratado como uma obra de impacto, com estrutura, ritmo e mensagem pensados para um só objetivo: transformar leitura em resultado.
-                    </p>
-                    <p>
-                      Com uma trajetória ao lado de grandes nomes que moldaram o marketing digital no Brasil, Gustavo conhece os bastidores onde as grandes ideias viram movimentos. Mais do que escrever livros, ele sabe como posicionar histórias que geram autoridade, influência e vendas.
-                    </p>
-                    <p className="text-2xl font-semibold text-[#F97316] my-8 text-center italic">
-                      "Livro bem-sucedido é como um filme premiado, escrita afiada, narrativa impactante e uma bestseller cheia de resultados."
+                    <p className="text-2xl text-center font-semibold text-[#F97316] my-8 italic">
+                      Especialista em transformar experiência de vida em um livro
                     </p>
                   </div>
                 </div>
@@ -81,8 +69,14 @@ const Index = () => {
                       />
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-4xl font-bold mb-6 border-b border-[#F97316] pb-2">Capítulo 2</h2>
+                      <h2 className="text-3xl font-bold mb-6 text-[#F97316]">Gustavo Correia - Ghostwriter</h2>
                       <div className="space-y-5 text-gray-300 text-lg leading-relaxed">
+                        <p>
+                          Enquanto muitos escrevem livros, ele constrói narrativas. Cada projeto que passa por suas mãos é tratado como uma obra de impacto, com estrutura, ritmo e mensagem pensados para um só objetivo: transformar leitura em resultado.
+                        </p>
+                        <p>
+                          Com uma trajetória ao lado de grandes nomes que moldaram o marketing digital no Brasil, Gustavo conhece os bastidores onde as grandes ideias viram movimentos. Mais do que escrever livros, ele sabe como posicionar histórias que geram autoridade, influência e vendas.
+                        </p>
                         <p>
                           Hoje, assina obras para marcas e experts que exigem estratégia, identidade e performance. Com mais de 24 obras criadas, ele comanda cada etapa — da ideia ao lançamento — com precisão cirúrgica, palavra por palavra.
                         </p>
@@ -105,12 +99,7 @@ const Index = () => {
               {/* Page 4 - Contact */}
               <CarouselItem>
                 <div className="h-[80vh] p-8 overflow-y-auto">
-                  <h2 className="text-4xl font-bold mb-8 border-b border-[#F97316] pb-2">Capítulo 3</h2>
                   <div className="flex flex-col items-center">
-                    <p className="text-2xl text-center mb-8">
-                      Especialista em transformar experiência de vida em um livro
-                    </p>
-                    <div className="w-16 h-1 bg-[#F97316] my-8"></div>
                     <div className="max-w-xl mx-auto text-center space-y-6">
                       <h3 className="text-3xl font-bold">Trabalhe Comigo</h3>
                       <p className="text-xl text-gray-300 mb-4">Vamos bater Bestseller nas vendas!</p>
@@ -122,7 +111,7 @@ const Index = () => {
                       </Button>
                       <div className="flex justify-center gap-6 mt-8">
                         <a
-                          href="https://x.com/umbomescritor"
+                          href="https://x.com/obestseller_"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white hover:text-blue-400 transition-colors duration-300"
@@ -130,7 +119,7 @@ const Index = () => {
                           <Twitter size={32} />
                         </a>
                         <a
-                          href="https://www.instagram.com/umbomescritor/"
+                          href="https://www.instagram.com/obestseller_/"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white hover:text-pink-500 transition-colors duration-300"
