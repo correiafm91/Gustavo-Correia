@@ -11,9 +11,36 @@ import {
 
 const Index = () => {
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
+  const [activePage, setActivePage] = React.useState(0);
+  const carouselRef = React.useRef(null);
+  const [api, setApi] = React.useState(null);
+
+  React.useEffect(() => {
+    if (!api) return;
+    
+    // Update active page when slide changes
+    api.on('select', () => {
+      setActivePage(api.selectedScrollSnap());
+    });
+
+    // Initialize script for form integration after component mounts
+    const script = document.createElement('script');
+    script.src = 'https://form.respondi.app/static/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+      api?.off('select');
+    };
+  }, [api]);
+
+  const goToPage = (pageIndex) => {
+    api?.scrollTo(pageIndex);
+  };
 
   const handleButtonClick = () => {
-    window.open("https://www.instagram.com/direct/t/17846052717436451", "_blank");
+    setIsDialogOpen(true);
   };
 
   return (
@@ -21,7 +48,12 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8 relative">
         {/* Book Container */}
         <div className="max-w-4xl mx-auto bg-[#0c2341] rounded-lg shadow-2xl overflow-hidden border-t border-r border-[#1a3152]">
-          <Carousel className="w-full" opts={{ loop: false }}>
+          <Carousel 
+            className="w-full" 
+            setApi={setApi}
+            ref={carouselRef}
+            opts={{ loop: false }}
+          >
             <CarouselContent>
               {/* Page 1 - Cover */}
               <CarouselItem className="relative">
@@ -51,17 +83,17 @@ const Index = () => {
                     </p>
                     
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-                      <div className="bg-[#0f2a4a] p-6 rounded-lg border border-[#1a3152] text-center">
+                      <div className="bg-[#0f2a4a] p-6 rounded-lg border border-[#1a3152] text-center hover:shadow-lg hover:shadow-[#F97316]/20 transition-all duration-300 hover:-translate-y-1">
                         <div className="text-3xl font-bold text-[#F97316] mb-2">+24</div>
                         <p className="text-gray-300">Obras criadas</p>
                       </div>
                       
-                      <div className="bg-[#0f2a4a] p-6 rounded-lg border border-[#1a3152] text-center">
+                      <div className="bg-[#0f2a4a] p-6 rounded-lg border border-[#1a3152] text-center hover:shadow-lg hover:shadow-[#F97316]/20 transition-all duration-300 hover:-translate-y-1">
                         <div className="text-3xl font-bold text-[#F97316] mb-2">+400k</div>
                         <p className="text-gray-300">Lucros gerados</p>
                       </div>
                       
-                      <div className="bg-[#0f2a4a] p-6 rounded-lg border border-[#1a3152] text-center">
+                      <div className="bg-[#0f2a4a] p-6 rounded-lg border border-[#1a3152] text-center hover:shadow-lg hover:shadow-[#F97316]/20 transition-all duration-300 hover:-translate-y-1">
                         <div className="text-3xl font-bold text-[#F97316] mb-2">89,4%</div>
                         <p className="text-gray-300">Aprovação dos leitores</p>
                       </div>
@@ -78,12 +110,13 @@ const Index = () => {
               <CarouselItem>
                 <div className="h-[80vh] p-8 overflow-y-auto">
                   <div className="flex flex-col md:flex-row gap-8">
-                    <div className="w-full md:w-2/5 aspect-[3/4] overflow-hidden rounded-lg shadow-xl mb-6 md:mb-0">
+                    <div className="w-full md:w-2/5 aspect-[3/4] overflow-hidden rounded-lg shadow-xl mb-6 md:mb-0 relative group">
                       <img
                         src="https://i.postimg.cc/FRwqf88Z/487993310-528029013363503-6384488293855636473-n-2.jpg"
                         alt="Gustavo Correia"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0c2341]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="flex-1">
                       <h2 className="text-3xl font-bold mb-6 text-[#F97316]">Gustavo Correia - Ghostwriter</h2>
@@ -158,7 +191,12 @@ const Index = () => {
                 {[0, 1, 2, 3].map((page) => (
                   <div 
                     key={page}
-                    className="w-2 h-2 rounded-full bg-white/50 page-indicator"
+                    onClick={() => goToPage(page)}
+                    className={`w-2 h-2 rounded-full cursor-pointer transition-all ${
+                      activePage === page 
+                        ? "bg-[#F97316] w-4" 
+                        : "bg-white/50 hover:bg-white/80"
+                    }`}
                   />
                 ))}
               </div>
